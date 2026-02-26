@@ -25,6 +25,6 @@ export const AppDataSource = new DataSource({
   entities: [Usuario],
   //ou coringa
 // entities:  [ `${__dirname}/**/entities/*.{ts,js}`]
-// __dirname diretorio absoluto, ** vai pegar todos os arquivos /entities que tenha entities e com a extensão ts
+// __dirname diretorio absoluto, ** vai pegar todos as pastas com /entities que tenha entities e arquivos com a extensão ts
   
 });
