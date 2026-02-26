@@ -19,7 +19,12 @@ export const AppDataSource = new DataSource({
   // Para aula/dev: cria tabela sozinho
   // Em produção: migrations e synchronize=false
   synchronize: true,
-
+  // pARA SABER ONDE ESTÃO AS MINHAS ENTIDADES
   logging: false,
+  // pARA SABER ONDE ESTÃO AS MINHAS ENTIDADES
   entities: [Usuario],
+  //ou coringa
+// entities:  [ `${__dirname}/**/entities/*.{ts,js}`]
+// __dirname diretorio absoluto, ** vai pegar todos os arquivos /entities que tenha entities e com a extensão ts
+  
 });
